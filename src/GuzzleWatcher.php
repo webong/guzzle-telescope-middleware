@@ -7,7 +7,7 @@ use GuzzleHttp\Psr7\Response;
 use Laravel\Telescope\Telescope;
 use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Watchers\Watcher;
-use App\GuzzleTelescope\GuzzleHandled;
+use Webong\GuzzleTelescopeMiddleware\GuzzleHandled;
 
 class GuzzleWatcher extends Watcher
 {
@@ -119,11 +119,11 @@ class GuzzleWatcher extends Watcher
      *
      * Will return `null` if the response is not printable.
      *
-     * @param ResponseInterface $response
+     * @param Response $response
      *
      * @return string|null
      */
-    public static function response(ResponseInterface $response)
+    public static function response(Response $response)
     {
         $body = $response->getBody();
 
