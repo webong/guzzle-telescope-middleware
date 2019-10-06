@@ -1,0 +1,13 @@
+{
+    "name": "webong/guzzle-telescope-middleware",
+    "description": "A telescope watcher for guzzle http requests",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wisdom Ebong",
+            "email": "wisdomaebong@gmail.com"
+        }
+    ],
+    "require": {}
+}
