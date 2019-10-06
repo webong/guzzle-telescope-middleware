@@ -1,6 +1,6 @@
 {
     "name": "webong/guzzle-telescope-middleware",
-    "description": "A telescope watcher for guzzle http requests",
+    "description": "A Telescope middleware for guzzle http >= 6.0",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,5 +9,24 @@
             "email": "wisdomaebong@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webong\\GuzzleTelescopeMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webong\\GuzzleTelescopeMiddleware\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
 }
