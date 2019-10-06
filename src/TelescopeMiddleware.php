@@ -2,7 +2,6 @@
 namespace Webong\GuzzleTelescopeMiddleware;
 
 use Psr\Http\Message\RequestInterface;
-use Webong\GuzzleTelescope\GuzzleHandled;
 use GuzzleHttp\Exception\RequestException;
 
 class TelescopeMiddleware
